@@ -207,7 +207,7 @@
                 message.innerHTML = 'Регистрация успешна! Перенаправление...';
 
                 setTimeout(() => {
-                    window.location.href = 'account.html';
+                    window.location.href = 'home.html';
                 }, 1000);
             });
 
@@ -261,14 +261,14 @@
                 message.style.color = 'green';
 
                 setTimeout(() => {
-                    window.location.href = 'account.html';
+                    window.location.href = 'home.html';
                 }, 1000);
             });
 
             // Проверка авторизации
             const currentUser = localStorage.getItem('currentUser');
             if (currentUser) {
-                window.location.href = 'account.html';
+                window.location.href = 'home.html';
             }
         });
     </script>
